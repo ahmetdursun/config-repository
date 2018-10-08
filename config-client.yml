@@ -4,4 +4,4 @@ management:
       exposure:
         include: '*'
 configuration:
-  projectName: IBT Micro
+  projectName: IBT
