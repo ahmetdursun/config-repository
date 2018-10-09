@@ -5,3 +5,11 @@ management:
     web:
       exposure:
         include: hystrix.stream
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: THREAD
+          thread:
+            timeoutInMilliseconds: 1000        
