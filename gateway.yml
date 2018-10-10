@@ -4,16 +4,11 @@ management:
   endpoints:
     web:
       exposure:
-        include: hystrix.stream
-hystrix:
-  command:
-    default:
-      execution:
-        isolation:
-          strategy: thread
-          thread:
-            timeoutInMilliseconds: 15000      
+        include: hystrix.stream 
 spring:
   sleuth:
     sampler:
       percentage: 1.0
+spring:
+  zipkin:
+    baseUrl: http://localhost:9411/
