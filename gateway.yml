@@ -13,10 +13,7 @@ hystrix:
           strategy: thread
           thread:
             timeoutInMilliseconds: 15000      
-<<<<<<< HEAD
 spring:
   sleuth:
     sampler:
       percentage: 1.0
-=======
->>>>>>> 526d85891fe3ca642ef11630e4c1fecd7409b56b
