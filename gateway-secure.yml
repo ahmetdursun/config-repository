@@ -15,7 +15,7 @@ zuul:
   routes:
     user:
       path: /user/**
-      url: http://localhost:9998/auth-service/uaa/user
+      url: http://localhost:9999/auth-service/uaa/user
 security:
   oauth2:
     sso:
@@ -23,9 +23,9 @@ security:
         secure: false
         path: /,/**/*.html
     client:
-      accessTokenUri: http://localhost:9998/auth-service/uaa/oauth/token
-      userAuthorizationUri: http://localhost:9998/auth-service/uaa/oauth/authorize
+      accessTokenUri: http://localhost:9999/auth-service/uaa/oauth/token
+      userAuthorizationUri: http://localhost:9999/auth-service/uaa/oauth/authorize
       clientId: acme
       clientSecret: acmesecret
     resource:
-      userInfoUri: http://localhost:9998/auth-service/uaa/user
+      userInfoUri: http://localhost:9999/auth-service/uaa/user
