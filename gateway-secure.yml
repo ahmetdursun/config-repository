@@ -1,5 +1,5 @@
 server:
-  port: 9999
+  port: 8765
 management:
   endpoints:
     web:
@@ -15,7 +15,7 @@ zuul:
   routes:
     user:
       path: /user/**
-      url: http://localhost:9998/uaa/user
+      url: http://localhost:9999/uaa/user
     uaa:
       sensitiveHeaders: Authorization
       path: /uaa/**
@@ -29,9 +29,9 @@ security:
         secure: false
         path: /,/**/*.html
     client:
-      accessTokenUri: http://localhost:9998/uaa/oauth/token
-      userAuthorizationUri: http://localhost:9998/uaa/oauth/authorize
-      clientId: acme
-      clientSecret: acmesecret
+      accessTokenUri: http://localhost:9999/uaa/oauth/token
+      userAuthorizationUri: http://localhost:9999/uaa/oauth/authorize
+      clientId: adminapp
+      clientSecret: password
     resource:
-      userInfoUri: http://localhost:9998/uaa/user
+      userInfoUri: http://localhost:9999/uaa/user
