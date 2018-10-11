@@ -16,6 +16,10 @@ zuul:
     user:
       path: /user/**
       url: http://localhost:9998/uaa/user
+    uaa:
+      sensitiveHeaders: Authorization
+      path: /uaa/**
+      stripPrefix: false
 security:
   oauth2:
     sso:
