@@ -1,0 +1,9 @@
+server:
+  port: 7999
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+configuration:
+  projectName: Dev prop
