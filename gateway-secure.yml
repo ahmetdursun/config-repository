@@ -21,14 +21,12 @@ zuul:
       path: /uaa/**
       stripPrefix: false
 security:
-  basic:
-    enabled: false
+  user:
+    password: password
   oauth2:
-    sso:
-      home:
-        secure: false
-        path: /,/**/*.html
     client:
+      scope: read, write
+      authorizedGrantTypes: authorization_code,refresh_token,password
       accessTokenUri: http://localhost:9999/uaa/oauth/token
       userAuthorizationUri: http://localhost:9999/uaa/oauth/authorize
       clientId: acme
