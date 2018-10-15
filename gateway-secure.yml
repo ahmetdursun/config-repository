@@ -14,6 +14,7 @@ spring:
 zuul:
   routes:
     user:
+      sensitiveHeaders:
       path: /user/**
       url: http://localhost:9999/uaa/user
 security:
