@@ -19,8 +19,8 @@ zuul:
       url: http://localhost:9999/uaa/user
     jpa:
       sensitiveHeaders:
-      path: /jpa/**
-      url: http://localhost:8004/service-jpa-secure/      
+      path: /service-jpa-secure/**
+      serviceId: service-jpa-secure
 security:
   user:
     password: none
