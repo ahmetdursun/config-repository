@@ -17,7 +17,7 @@ zuul:
       sensitiveHeaders:
       path: /user/**
       url: http://localhost:9999/uaa/user
-    user:
+    jpa:
       sensitiveHeaders:
       path: /jpa/**
       url: http://localhost:8004/service-jpa-secure/      
