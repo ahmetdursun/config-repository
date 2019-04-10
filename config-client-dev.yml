@@ -6,4 +6,4 @@ management:
       exposure:
         include: '*'
 configuration:
-  projectName: Dev prop
+  projectName: Dev property
